@@ -9,6 +9,12 @@ def jegyek_atlag(lista):
 
 
 
+def osztalyzat_db(lista,szam):
+    db = 0
+    for szam in lista:
+        if szam== szam:
+            db += 1
+    return szam
 
 
 
@@ -35,6 +41,7 @@ def savdiagarm(lista): #eljaras
 
         print(f"{i}| {csillag}")
         i+=1
+
 
 def jegyek_kiir(lista): #eljaras
     i:int=0
