@@ -9,6 +9,12 @@ def jegyek_atlag(lista):
 
 
 
+def osztalyzat_db(lista,szam):
+    db = 0
+    for szam in lista:
+        if szam== szam:
+            db += 1
+    return szam
 
 
 
@@ -28,14 +34,18 @@ def jegyek_atlag(lista):
 
 
 
-def sordiagarm(lista): #eljaras
 
+
+
+def savdiagram(lista): #eljaras
+
+    """"""
 
 def jegyek_kiir(lista): #eljaras
-
+    """"""
 
 def veletlen_jegyek(lista): #eljaras
-
+    """"""
 
 
         
