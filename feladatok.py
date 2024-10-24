@@ -50,9 +50,9 @@ def jegyek_kiir(lista): #eljaras
         i+=1
 
 def veletlen_jegyek(lista): #eljaras
-    lista=lista[]
+    lista=[]
     i:int=0
-    while(i<17)
+    while(i<17):
         jegy:int=random.randint()*4+1
         lista[i]=jegy
         i+=1
