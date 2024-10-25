@@ -32,9 +32,10 @@ def savdiagram(lista): #eljaras
 
 
 def jegyek_kiir(lista): #eljaras
-    i:int=1
+    i:int=0
     while(i<len(lista)):
-        print(f"{i}. diák: {lista[i]}")
+        print(f"{i+1}. diák: {lista[i]}")
+        print("<><><><><><>")
         i+=1
 
 def veletlen_jegyek(lista): #eljaras

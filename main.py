@@ -14,9 +14,9 @@ print("2-3-as feladat:")
 print(f" 1-es osztálzatok:{feladatok.osztalyzat_db(programozas_jegyek,1)}")
 print("")
 
-'''print("5. feladat:")
+print("5. feladat:")
 feladatok.savdiagram(programozas_jegyek)
-print("")'''
+print("")
 
 print("6. feladat:")
 feladatok.jegyek_kiir(programozas_jegyek)
