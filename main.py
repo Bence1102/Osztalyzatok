@@ -10,7 +10,7 @@ print("2-3-as feladat:")
 print(f" 5-ös osztálzatok:{feladatok.osztalyzat_db(programozas_jegyek,5)}")
 print("")
 
-print("2-3-as feladat:")
+print("2-4-as feladat:")
 print(f" 1-es osztályzatok:{feladatok.osztalyzat_db(programozas_jegyek,1)}")
 print("")
 

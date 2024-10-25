@@ -32,7 +32,7 @@ def elegtelen_sorszam(lista): #függvény
 def savdiagarm(sav_lista): #eljaras
     i:int=0
     while(i<len(sav_lista)):
-       print(f"{i}| {sav_lista[i]}")
+       print(f"{i+1}| {sav_lista[i]}")
        i+=1
     
 
