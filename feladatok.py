@@ -5,7 +5,7 @@ def jegyek_atlag(lista):
     while(db<len(lista)):
         atlag+=lista[db]
         db+=1
-    atlag=atlag%db
+    atlag=atlag/db
     return atlag
 
 
@@ -15,28 +15,12 @@ def osztalyzat_db(lista,szam):
     for szam in lista:
         if szam== szam:
             db += 1
+        szam += 1
     return szam
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def savdiagarm(sav_lista):
+def savdiagarm(sav_lista): #eljaras
     i:int=0
     while(i<len(sav_lista)):
        print(f"{i}| {sav_lista[i]}")
@@ -45,7 +29,11 @@ def savdiagarm(sav_lista):
 
 
 def jegyek_kiir(lista): #eljaras
-    None
+    i:int=0
+    while(i<len(lista)):
+        print(f"{i+1}. diák: {lista[i]}")
+        print("<><><><><><>")
+        i+=1
 
 def veletlen_jegyek(lista): #fuggveny
     lista=[]
