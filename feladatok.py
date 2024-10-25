@@ -13,10 +13,10 @@ def jegyek_atlag(lista):
 
 def osztalyzat_db(lista,szam):
     db = 0
-    for szam in lista:
+    for i in lista:
         if szam== szam:
             db += 1
-        szam += 1
+        i+=1
     return szam
 
 
