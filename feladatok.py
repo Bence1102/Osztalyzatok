@@ -21,6 +21,14 @@ def osztalyzat_db(lista,szam):
 
 
 
+def elegtelen_sorszam(lista): #függvény
+    i:int=0
+    while(i<len(lista)):
+        if lista[i] == 1:
+            print(f" {i+1}. diák kapott 1-est.")
+        i+=1
+
+
 
 def savdiagram(lista): #eljaras
     i:int=0
@@ -34,8 +42,8 @@ def savdiagram(lista): #eljaras
 def jegyek_kiir(lista): #eljaras
     i:int=0
     while(i<len(lista)):
-        print(f"{i+1}. diák: {lista[i]}")
-        print("<><><><><><>")
+        print(f"* {i+1}. diák: {lista[i]} *")
+        print("***************")
         i+=1
 
 def veletlen_jegyek(lista): #eljaras
