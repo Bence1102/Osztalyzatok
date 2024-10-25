@@ -44,7 +44,7 @@ def savdiagarm(lista): #eljaras
 
 
 def jegyek_kiir(lista): #eljaras
-    i:int=0
+    i:int=1
     while(i<len(lista)):
         print(f"{i}. diák: {lista[i]}")
         i+=1
