@@ -1,3 +1,4 @@
+import random
 def jegyek_atlag(lista):
     atlag:float =0
     db:int=0
@@ -34,29 +35,28 @@ def osztalyzat_db(lista,szam):
 
 
 
-def savdiagarm(lista): #eljaras
-    i:int=0
-    while(i<len(lista)):
-        csillag:int=0
 
-        print(f"{i}| {csillag}")
-        i+=1
+def savdiagarm(sav_lista):
+    i:int=0
+    while(i<len(sav_lista)):
+       print(f"{i}| {sav_lista[i]}")
+       i+=1
+    
 
 
 def jegyek_kiir(lista): #eljaras
-    i:int=0
-    while(i<len(lista)):
-        print(f"{i}. diák: {lista[i]}")
-        i+=1
+    None
 
-def veletlen_jegyek(lista): #eljaras
+def veletlen_jegyek(lista): #fuggveny
     lista=[]
     i:int=0
     while(i<17):
-        jegy:int=random.randint()*4+1
+        jegy:int=random.randint()*5+1
+        if(jegy==6):
+            jegy=5
         lista[i]=jegy
         i+=1
-
+    return lista
 
 
         
