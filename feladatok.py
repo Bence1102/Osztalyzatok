@@ -29,7 +29,7 @@ def elegtelen_sorszam(lista): #függvény
 
 
 
-def savdiagram(lista): #eljaras
+def savdiagarm(sav_lista): #eljaras
     i:int=0
     while(i<len(sav_lista)):
        print(f"{i}| {sav_lista[i]}")

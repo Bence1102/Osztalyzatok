@@ -3,7 +3,7 @@ import feladatok
 programozas_jegyek=[5,2,3,4,4,5,5,5,1,2,2,3,4,5,5,5,4,3,3]
 
 print("1.feladat:")
-print(f"Jegyek átlaga: {feladatok.jegyek_atlag(programozas_jegyek)}")
+print(f"Jegyek átlaga: {feladatok.jegyek_atlag(programozas_jegyek):.2f}")
 print("")
 
 print("2-3-as feladat:")
@@ -24,7 +24,6 @@ def savdiagarm_segitoFgv(programozas_jegyek): #függvény
     savdiagaram_lista=[]
     while(x<6):
         x_jegy_db = feladatok.osztalyzat_db(programozas_jegyek,x)
-        print(x_jegy_db)
         csillag:str="*"*x_jegy_db
         savdiagaram_lista.append(csillag)
         x+=1
