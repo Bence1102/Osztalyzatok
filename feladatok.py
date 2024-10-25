@@ -12,11 +12,11 @@ def jegyek_atlag(lista):
 
 def osztalyzat_db(lista,szam):
     db = 0
-    for szam in lista:
-        if szam== szam:
+    for i in lista:
+        if i== szam:
             db += 1
-        szam += 1
-    return szam
+        i += 1
+    return db
 
 
 
@@ -39,10 +39,10 @@ def veletlen_jegyek(lista): #fuggveny
     lista=[]
     i:int=0
     while(i<17):
-        jegy:int=random.randint()*5+1
+        jegy:int=int(random.random()*5+1)
         if(jegy==6):
             jegy=5
-        lista[i]=jegy
+        lista.append(jegy)
         i+=1
     return lista
 

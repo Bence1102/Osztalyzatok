@@ -20,11 +20,12 @@ def savdiagarm_segitoFgv(programozas_jegyek): #függvény
     savdiagaram_lista=[]
     while(x<6):
         x_jegy_db = feladatok.osztalyzat_db(programozas_jegyek,x)
+        print(x_jegy_db)
         csillag:str="*"*x_jegy_db
         savdiagaram_lista.append(csillag)
         x+=1
     return savdiagaram_lista
-feladatok.savdiagarm(savdiagarm_segitoFgv)
+feladatok.savdiagarm(savdiagarm_segitoFgv(programozas_jegyek))
 print("")
 
 print("6. feladat:")
