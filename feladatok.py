@@ -1,5 +1,4 @@
 import random
-
 def jegyek_atlag(lista):
     atlag:float =0
     db:int=0
@@ -13,11 +12,11 @@ def jegyek_atlag(lista):
 
 def osztalyzat_db(lista,szam):
     db = 0
-    for szam in lista:
-        if szam== szam:
+    for i in lista:
+        if i== szam:
             db += 1
-        szam += 1
-    return szam
+        i += 1
+    return db
 
 
 
@@ -32,11 +31,10 @@ def elegtelen_sorszam(lista): #függvény
 
 def savdiagram(lista): #eljaras
     i:int=0
-    while(i<len(lista)):
-        csillag:int=0
-
-        print(f"{i}| {csillag}")
-        i+=1
+    while(i<len(sav_lista)):
+       print(f"{i}| {sav_lista[i]}")
+       i+=1
+    
 
 
 def jegyek_kiir(lista): #eljaras
@@ -46,14 +44,16 @@ def jegyek_kiir(lista): #eljaras
         print("***************")
         i+=1
 
-def veletlen_jegyek(lista): #eljaras
+def veletlen_jegyek(lista): #fuggveny
     lista=[]
     i:int=0
     while(i<17):
-        jegy:int=random.randint()*4+1
-        lista[i]=jegy
+        jegy:int=int(random.random()*5+1)
+        if(jegy==6):
+            jegy=5
+        lista.append(jegy)
         i+=1
-
+    return lista
 
 
         

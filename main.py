@@ -2,7 +2,7 @@ import feladatok
 
 programozas_jegyek=[5,2,3,4,4,5,5,5,1,2,2,3,4,5,5,5,4,3,3]
 
-'''print("1.feladat:")
+print("1.feladat:")
 print(f"Jegyek átlaga: {feladatok.jegyek_atlag(programozas_jegyek)}")
 print("")
 
@@ -12,14 +12,24 @@ print("")
 
 print("2-3-as feladat:")
 print(f" 1-es osztályzatok:{feladatok.osztalyzat_db(programozas_jegyek,1)}")
-print("")'''
+print("")
 
 print("4-es feladat:")
 feladatok.elegtelen_sorszam(programozas_jegyek)
 print("")
 
-'''print("5. feladat:")
-feladatok.savdiagram(programozas_jegyek)
+print("5. feladat:")
+def savdiagarm_segitoFgv(programozas_jegyek): #függvény
+    x:int=1
+    savdiagaram_lista=[]
+    while(x<6):
+        x_jegy_db = feladatok.osztalyzat_db(programozas_jegyek,x)
+        print(x_jegy_db)
+        csillag:str="*"*x_jegy_db
+        savdiagaram_lista.append(csillag)
+        x+=1
+    return savdiagaram_lista
+feladatok.savdiagarm(savdiagarm_segitoFgv(programozas_jegyek))
 print("")
 
 print("6. feladat:")
@@ -27,6 +37,7 @@ feladatok.jegyek_kiir(programozas_jegyek)
 print("")
 
 print("7. feladat:")
-feladatok.veletlen_jegyek(programozas_jegyek)'''
+uj_lista = feladatok.veletlen_jegyek(programozas_jegyek)
+print(uj_lista)
 
 
